@@ -115,15 +115,16 @@ public class Examen1P1_JosephReyes {
                             System.out.println("El numero tiene que ser mayor a 20");
                         }
                     } while (verificaciones != 1);
-                    for (int i = 0; i < n / 2; i++) {
-                        for (int j = 0; j < n; j++) {
-                            if (j == n) {
-                                System.out.print("*");
-                            } else {
-                                System.out.print(" ");
-                            }
+                    for (int i = 0; i < n; i++) {
+                        for (int j = 0; j < n - i - 1; j++) {
+                            System.out.print(" ");
                         }
-                        System.out.println("*");
+
+                        for (int k = 0; k < 2 * i + 1; k++) {
+                            System.out.print("*");
+                        }
+
+                        System.out.println();
                     }
                     break;
                 default:
